@@ -1,0 +1,62 @@
+Sign up on github.com to create github account.
+
+Download GitBash in PC. It works like terminal in VS code.
+
+Configuring Git:
+In GitBash write:   git config --global user.name "F-hayyat"    /(username). press enter and type,    git config --global user.email "m.faisal.hayyat@gmail.com    /(user email).
+
+TO show what you type, write   git config --list  .
+
+Open GitBash and type "git --version" after $ sign, to check git version and it also tells that git is working properly.
+
+
+
+CLone Repository:
+Clone repository means to copy from remote(GitHub) to Local(Pc or Code editor).
+For this, open repository in GitHub, open code and copy HTTPs.
+Go to VS code terminal and type      git clone and paste HTTPs link.
+
+
+
+To go in inner folder type,    cd and inner folder name.
+Return to outet folder:  cd ..   (cd space dot dot)
+
+To auto complete line press tab in terminal.
+
+To see all files in a folder type,    ls   and it will give all files of that folder.
+
+To see all hidden files in folder type,   ls-a   .
+if in hidden files it shows a git file that means this file is present in github.
+
+Type,   git status    to check if files are commited or not .
+When we check git status, it give us 4 type of files,
+1: Untracked Files: New files that git don't know yet.
+2: Modified Files:  Files that have something changed.
+3: Staged FIles:    Files that are ready to commit.
+4: Unmodified Files:  Unchanged files.
+
+
+
+Afet modifying a file we have two thing to do,
+1: to add files,   ( when we add a file , it goes in staged form).
+2: to commit files.
+
+To add file:  git add 'file name'
+To commit file:  git commit -m "Some Message"
+
+
+Push Command:
+To push data on GitHub     git push origin main    .
+
+
+
+Start Locally From PC:
+To make a local folder a git repository type,    git init      .
+Then check    git status
+Then   git add
+Then    git commit -m " Some Message"
+Then go to GitHub and create new repository.
+Then write,     git remote add origin <Link HTTPs>
+Then to verify origin write,    git remote -v
+To check branch,    git branch
+To rename branch,    git branch -M main
