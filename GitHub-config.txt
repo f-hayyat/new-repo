@@ -54,9 +54,11 @@ Start Locally From PC:
 To make a local folder a git repository type,    git init      .
 Then check    git status
 Then   git add
-Then    git commit -m " Some Message"
+Then    git commit -m "Some Message"
 Then go to GitHub and create new repository.
 Then write,     git remote add origin <Link HTTPs>
 Then to verify origin write,    git remote -v
 To check branch,    git branch
 To rename branch,    git branch -M main
+
+After setting git branch main again   git push origin main
