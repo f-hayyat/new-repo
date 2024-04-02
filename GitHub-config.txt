@@ -59,6 +59,47 @@ Then go to GitHub and create new repository.
 Then write,     git remote add origin <Link HTTPs>
 Then to verify origin write,    git remote -v
 To check branch,    git branch
-To rename branch,    git branch -M main
+To rename branch,    git branch -M new name
 
 After setting git branch main again   git push origin main
+
+you can create a new branch by typing     git checkout -b  new branch name
+TO go yo that new branch        git checkout branch name
+To delete a branch        git branch -d branch name
+TO check difference between two branches    git diff branch name
+
+
+Merging Code: Merging Two branches,
+Way 1: Using GitHub
+create pull request and merge code
+
+To get that Merging data on your local (From GitHub to VS code)   Create Pull Command
+    git pull origin main
+
+    Way 2:  Write in terminal     git merge branch name
+
+
+    Git Conflicts:
+    When we change in both branches at same line and same place different things , then Git cannot understand whose branch code is to be write and whose not.
+
+
+    Undoing changes:
+    1: Staged changes:  changes that are added but still not commited
+         git reset file name         for 1 or 2 files
+         git reset                for many changes
+
+    2: Commited changes:   changes that are commited
+         git reset HEAD~1            for 1 commit to change
+
+         git log       to check changes
+
+         git reset <commit hash>        for many changes that are commited
+
+         Commit hash:   A unique number of every commit 
+                        git log             to get commit hash
+
+ To reset change from local (VS code)    git reset --hard <commit hash>   
+
+
+ Fork:
+       To work on some other person's Repository,  go on github to that person's repo and fork the data on your git account , do your work in that data and again create pull request and merge that data to that repo.             
