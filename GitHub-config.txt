@@ -19,7 +19,7 @@ Go to VS code terminal and type      git clone and paste HTTPs link.
 
 
 To go in inner folder type,    cd and inner folder name.
-Return to outet folder:  cd ..   (cd space dot dot)
+Return to outer folder:  cd ..   (cd space dot dot)
 
 To auto complete line press tab in terminal.
 
